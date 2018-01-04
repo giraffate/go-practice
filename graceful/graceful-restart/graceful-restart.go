@@ -16,7 +16,7 @@ import (
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	time.Sleep(10 * time.Second)
-	w.Write([]byte("Hello, middleware!!!!!!\n"))
+	w.Write([]byte("Hello, graceful restart!\n"))
 }
 
 func main() {
