@@ -14,6 +14,9 @@ const (
 )
 
 // Manager is the session manager.
+//
+// TODO
+// No session GC is implemented.
 type Manager struct {
 	m            sync.Mutex
 	provider     Provider
